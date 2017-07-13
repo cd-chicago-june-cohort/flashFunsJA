@@ -1,0 +1,23 @@
+<html>
+    <head>
+       <title>Form Test Index</title>
+    </head>
+    <body>
+      <h1> Guess a number between 0-100</h1>
+      <p>{{guess}}</p>
+       <p>{{instructions}}</p>
+
+      <form action="/guess" method="POST">
+      Your guess: <input type="text" name="guess"><br>
+      <input type="submit" value="guess">
+      </form> 
+      
+      <form action="/reset" method="POST">
+      <input type="submit" value="newgame">
+      </form> 
+      
+      <!--<form action="/reset">
+      <button type="button">RESET!</button>
+      </form>-->
+    </body>
+</html>
